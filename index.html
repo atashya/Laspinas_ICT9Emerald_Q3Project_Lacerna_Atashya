@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manila Train Fare Guide</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .banner {
+            background: #75975e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .navbar {
+            margin-bottom: 20px;
+        }
+        .btn-submit {
+            background-color: #75975e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .btn-submit:hover {
+            background-color: #5f7f4c;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        Manila Train Fare Guide
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Rail Transit Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="schedule.html">Transit Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+                <form class="d-flex ms-auto">
+                    <input class="form-control me-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Welcome to the Manila Train Fare Guide</h1>
+        <p>Select your train route and check the fare details.</p>
+        <h2>Transit Map</h2>
+        <img src="https://www.deiville.com/wp-content/uploads/2023/03/map-of-lrt-line-1-2-and-mrt-3-stations.jpg" class="img-fluid" alt="Manila Transit Map">
+        <h2>Types of Tickets</h2>
+        <ul>
+            <li>Regular Ticket (Php 13 – 28)</li>
+            <li>Discounted Ticket (Senior, PWD, Student - 20% off)</li>
+        </ul>
+        <h2>Station Selector</h2>
+        <form>
+            <label for="station">Choose a station:</label>
+            <select id="station" class="form-select">
+                <option value="roosevelt">Roosevelt</option>
+                <option value="baclaran">Baclaran</option>
+            </select>
+        </form>
+        <h2>Comment/Feedback</h2>
+        <form>
+            <textarea class="form-control" rows="4" placeholder="Enter your feedback"></textarea>
+            <button class="btn-submit mt-2">Submit</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
